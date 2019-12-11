@@ -26,26 +26,29 @@ class GameViewController: UIHostingController<gameScreen>
     
     func setupSwipeGestures()
     {
-        view.addGestureRecognizer(Swipe(.up)
-        {
-            self.rootView.gameModel.upMove()
-        })
+        let upGesture = UISwipeGestureRecognizer(target: self.rootView.gameModel, action: #selector(self.rootView.gameModel.upMove))
+        upGesture.numberOfTouchesRequired = 1
+        upGesture.direction = .up
         
-        view.addGestureRecognizer(Swipe(.left)
-        {
-            self.rootView.gameModel.leftMove()
-        })
+        view.addGestureRecognizer(upGesture)
         
-        view.addGestureRecognizer(Swipe(.right)
-        {
-            self.rootView.gameModel.rightMove()
-        })
+        let leftGesture = UISwipeGestureRecognizer(target: self.rootView.gameModel, action: #selector(self.rootView.gameModel.leftMove))
+        leftGesture.numberOfTouchesRequired = 1
+        leftGesture.direction = .left
         
-        view.addGestureRecognizer(Swipe(.down)
-        {
-            self.rootView.gameModel.downMove()
-        })
+        view.addGestureRecognizer(leftGesture)
         
+        let rightGesture = UISwipeGestureRecognizer(target: self.rootView.gameModel, action: #selector(self.rootView.gameModel.rightMove))
+        rightGesture.numberOfTouchesRequired = 1
+        rightGesture.direction = .right
+        
+        view.addGestureRecognizer(rightGesture)
+        
+        let downGesture = UISwipeGestureRecognizer(target: self.rootView.gameModel, action: #selector(self.rootView.gameModel.downMove))
+        downGesture.numberOfTouchesRequired = 1
+        downGesture.direction = .down
+        
+        view.addGestureRecognizer(downGesture)
     }
 
     

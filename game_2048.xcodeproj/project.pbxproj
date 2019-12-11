@@ -10,7 +10,6 @@
 		F5039E5B23A0F82E000582FE /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5039E5A23A0F82E000582FE /* TileView.swift */; };
 		F5039E5D23A0F981000582FE /* colorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5039E5C23A0F981000582FE /* colorExtension.swift */; };
 		F5241DE223A1134E00CADC71 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5241DE123A1134E00CADC71 /* GameViewController.swift */; };
-		F5241DE423A11EF200CADC71 /* Swipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5241DE323A11EF200CADC71 /* Swipe.swift */; };
 		F550A742239ADC0400DF5FED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F550A741239ADC0400DF5FED /* AppDelegate.swift */; };
 		F550A744239ADC0400DF5FED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F550A743239ADC0400DF5FED /* SceneDelegate.swift */; };
 		F550A746239ADC0400DF5FED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F550A745239ADC0400DF5FED /* ContentView.swift */; };
@@ -28,7 +27,6 @@
 		F5039E5A23A0F82E000582FE /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		F5039E5C23A0F981000582FE /* colorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorExtension.swift; sourceTree = "<group>"; };
 		F5241DE123A1134E00CADC71 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		F5241DE323A11EF200CADC71 /* Swipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipe.swift; sourceTree = "<group>"; };
 		F550A73E239ADC0400DF5FED /* game_2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = game_2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F550A741239ADC0400DF5FED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F550A743239ADC0400DF5FED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 				F5039E5A23A0F82E000582FE /* TileView.swift */,
 				F5039E5C23A0F981000582FE /* colorExtension.swift */,
 				F5241DE123A1134E00CADC71 /* GameViewController.swift */,
-				F5241DE323A11EF200CADC71 /* Swipe.swift */,
 			);
 			path = game_2048;
 			sourceTree = "<group>";
@@ -179,7 +176,6 @@
 				F5758727239E706400FDA11E /* GameBoardView.swift in Sources */,
 				F5039E5B23A0F82E000582FE /* TileView.swift in Sources */,
 				F550A756239AE2DB00DF5FED /* gameScreen.swift in Sources */,
-				F5241DE423A11EF200CADC71 /* Swipe.swift in Sources */,
 				F550A744239ADC0400DF5FED /* SceneDelegate.swift in Sources */,
 				F550A75B239AE4B900DF5FED /* GameBoard.swift in Sources */,
 				F550A746239ADC0400DF5FED /* ContentView.swift in Sources */,
