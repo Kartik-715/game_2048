@@ -10,17 +10,35 @@ import SwiftUI
 
 struct gameScreen: View
 {
+    var gameModel: GameModel
     
+    init(dimension: Int)
+    {
+        gameModel = GameModel(dimension: dimension)
+    }
     
-    
-    
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+    var body: some View
+    {
+        VStack(alignment: .center, spacing: 10)
+        {
+            Text("2048").font(.system(size: 30, weight: .black, design: .rounded)).foregroundColor(Color.red).multilineTextAlignment(.center).lineLimit(2).cornerRadius(5.0)
+            GameBoardView(dimension: gameModel.dimension, board: gameModel.gameBoard)
+            //Spacer()
+            Text("Enjoy The Game")
+            
+        }
+        .frame(minWidth: .zero,
+        maxWidth: .infinity,
+        minHeight: .zero,
+        maxHeight: .infinity,
+        alignment: .center)
+        .background(Color.gameBackground)
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
 struct gameScreen_Previews: PreviewProvider {
     static var previews: some View {
-        gameScreen()
+        gameScreen(dimension: 4)
     }
 }

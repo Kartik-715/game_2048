@@ -7,18 +7,28 @@
 //
 
 import Foundation
+import SwiftUI
 
 enum TileObject
 {
     case empty
     case tile(Int)
+    
+    func getValue() -> Int
+    {
+        switch self
+        {
+            case .empty: return 0
+            case let .tile(x): return x
+        }
+    }
 }
 
 
-struct SquareGameBoard<T>
+class SquareGameBoard<T> : ObservableObject
 {
-    let dimension: Int
-    var board:[T]
+    var dimension: Int
+    @Published var board:[T]
     
     init(dimension d: Int, initValue: T)
     {
@@ -40,11 +50,12 @@ struct SquareGameBoard<T>
             assert(row >= 0 && row < dimension)
             assert(col >= 0 && col < dimension)
             board[row*dimension + col] = newValue
+            //print("Changed Value of board at \(row),\(col) to \(newValue)")
         }
     }
     
     
-    mutating func setAll(to val: T)
+    func setAll(to val: T)
     {
         for i in 0..<dimension
         {

@@ -19,3 +19,10 @@ struct MoveCommand
     let direction: MoveDirection
     let completion: (Bool) -> ()
 }
+
+enum MoveOrder
+{
+    case moveOneTile(from: Int, to: Int, value: Int)
+    case moveTwoTiles(s1: Int, s2: Int, d: Int, value: Int)
+}
+
